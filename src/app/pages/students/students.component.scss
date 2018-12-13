@@ -1,0 +1,21 @@
+.divider{
+    width:5px;
+    height:auto;
+    display:inline-block;
+}
+
+.tablecol{
+    background-color: #419df4;
+}
+
+.nb-trash, .nb-edit{
+    font-size: 35px;
+}
+
+.nb-trash, .nb-edit:hover{
+    cursor: pointer;
+}
+
+.table{
+    border-radius: 5px
+}

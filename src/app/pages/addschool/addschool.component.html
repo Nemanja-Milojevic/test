@@ -1,0 +1,43 @@
+<nb-layout>
+  <nb-layout-column>
+    <nb-card>
+      <p class="sub-title" class="text-center">Enter school information</p>
+
+      <form #form="ngForm" aria-labelledby="title">
+        <div class="inputs">
+          <div class="form-control-group">
+            <label class="label" for="input-email">School Name<span style="color: red">*</span></label>
+            <input nbInput fullWidth autofocus [(ngModel)] = "school.name" name="schoolname"/>
+          </div>
+          <div class="form-control-group">
+            <label class="label" for="input-email">Administrator First Name<span style="color: red">*</span></label>
+            <input nbInput fullWidth [(ngModel)] = "school.adminname" name="adminname"/>
+          </div>
+          <div class="form-control-group">
+            <label class="label" for="input-email">Administrator Last Name<span style="color: red">*</span></label>
+            <input nbInput fullWidth [(ngModel)] = "school.adminlastname" name="adminlastname"/>
+          </div>
+          <div class="form-control-group">
+            <label class="label" for="input-email">Email<span style="color: red">*</span></label>
+            <input nbInput fullWidth placeholder="email@gmail.com" [(ngModel)] = "school.email" name="email"/>
+          </div>
+          <div class="form-control-group">
+            <label class="label" for="input-email">Password<span style="color: red">*</span></label>
+            <input type="password" nbInput fullWidth [(ngModel)] = "school.password" name="password"/>
+          </div>
+          <div class="form-control-group">
+            <label class="label" for="input-email">Confirm Password<span style="color: red">*</span></label>
+            <input type="password" nbInput fullWidth [(ngModel)] = "school.confirmpassword" name="confirmpassword"/>
+          </div>
+          <div class="form-control-group">
+            <label class="label" for="input-email">Number of Pupils/Students<span style="color: red">*</span></label>
+            <input nbInput fullWidth  [(ngModel)] = "school.number" name="number"/>
+          </div>
+        </div>
+        <div class="text-center">
+          <button (click) = "add()" class="button" nbButton status="success">Add school</button>
+        </div>
+      </form>
+    </nb-card>
+  </nb-layout-column>
+</nb-layout>

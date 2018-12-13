@@ -1,0 +1,57 @@
+<nb-card size = "large">
+  <nb-card-body>
+    <div class="panel panel-default">
+      <table class="table table-hover table-striped">
+        <thead class="tablecol">
+          <tr>
+            <th class="text-center" scope="col" style="width: 10%">#</th>
+            <th class="text-center" scope="col" style="width: 30%">
+              First name
+            </th>
+            <th class="text-center" scope="col" style="width: 30%">
+              Last name
+            </th>
+            <th class="text-center" scope="col" style="width: 30%">Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row" class="tablecol">1</th>
+            <td>Dashboard</td>
+            <td>Otto</td>
+            <td class="text-center">
+              <i class="nb-edit" (click)="log()"></i>
+              <div class="divider"></div>
+              <i
+                class="nb-trash"
+                data-toggle="tooltip"
+                data-placement="top"
+                title="Delete student"
+              ></i>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row" class="tablecol">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td class="text-center">
+              <i class="nb-edit"></i>
+              <div class="divider"></div>
+              <i class="nb-trash"></i>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row" class="tablecol">3</th>
+            <td>Larry</td>
+            <td>Bird</td>
+            <td class="text-center">
+              <i class="nb-edit"></i>
+              <div class="divider"></div>
+              <i class="nb-trash"></i>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </nb-card-body>
+</nb-card>

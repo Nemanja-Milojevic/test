@@ -1,0 +1,29 @@
+<nb-layout>
+  <nb-layout-column>
+    <nb-card>
+      <p class="sub-title" class="text-center">Enter class information</p>
+
+      <form (ngSubmit)="addDevice()" #form="ngForm" aria-labelledby="title">
+        <div class="inputs">
+          <div class="form-control-group">
+            <label class="label" for="input-email">Type:</label>
+            <input nbInput fullWidth autofocus [(ngModel)] = "device.type" name="devicename" />
+          </div>
+          <div class="form-control-group">
+            <label class="label" for="input-email">Serial:</label>
+            <input nbInput fullWidth autofocus [(ngModel)] = "device.serial" name="deviceserial" />
+          </div>
+          <div class="form-control-group">
+            <label class="label" for="input-email">Date of purchase:</label>
+            <input nbInput fullWidth placeholder="Class name" [nbDatepicker]="formpicker2" [(ngModel)] = "device.date_purchase" name="date2"/>
+            <ngb-timepicker></ngb-timepicker>
+            <nb-datepicker #formpicker2></nb-datepicker>
+          </div>
+        </div>
+        <div class="text-center">
+          <button class="button" nbButton status="success">Add class</button>
+        </div>
+      </form>
+    </nb-card>
+  </nb-layout-column>
+</nb-layout>
